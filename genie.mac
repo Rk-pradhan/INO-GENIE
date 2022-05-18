@@ -1,0 +1,8 @@
+/run/initialize
+
+/genie/interaction_type cc
+
+/genie/Scattering_type mec
+
+
+/run/beamOn 1
