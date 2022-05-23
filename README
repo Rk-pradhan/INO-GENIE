@@ -9,8 +9,36 @@
 
 
 In this project, GENIE is interfaced with GEANT4 for INO-ICAL geometry. GENIE 
-is a neutrino event generator. 
+is a neutrino event generator. After generating events in GENIE, you will get a
+data file in root format  which contains all final particle's informations (eg.
+ pdg, position, energy, momentum, etc). These informations have been given to
+ GEANT4. In GEANT4, three new commands have been defined, you can read about
+ it in the document GENIE-GEANT4-Interface.pdf. One can shoot particles for a
+ particular interaction and scattering type pairs.  
 
-Soon it will be updated.
 
-	
+To run this :
+
+	1. Make a build folder : mkdir build
+	2. Go to the build folder. : cd build
+	3. cmake it : cmake ../INO-GENIE
+	4. make it : make -j4
+	5. run it : ./ino-genie
+
+To shoot particles :
+
+     To shoot particles for interaction type cc (charged-current) and scattering 
+type qes (Quasi-elastic current) from GENIE, 
+
+	 /genie/interaction_type cc
+	 /genie/Scattering_type qes
+	 /run/beamOn 1
+
+To shoot particle without visualization : 
+	1. use genie.mac file.
+	2. run it : ./ino-genie genie.mac
+
+
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
