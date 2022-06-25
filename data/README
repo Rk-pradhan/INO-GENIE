@@ -4,5 +4,5 @@ The readData.cc is a program to extract data from the data files and this progra
 Run it by: root readData.cc
 It will ask interaction type (put cc or nc), and scattering-type (put any one of qes, mec, coh, res, dis).
 
-The GENIE-GEANT4-interface.pdf is documentation on the interfacting process of GENIE with GEANT4.
+The GENIE-GEANT4-interface.pdf is documentation on the interfacing process of GENIE with GEANT4.
  	
